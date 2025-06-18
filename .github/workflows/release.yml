@@ -36,6 +36,7 @@ jobs:
       run: |
         git clone https://github.com/fluent/fluent-bit.git
         cd fluent-bit
+        git checkout ${{ github.ref_name }}
         git submodule update --init --recursive
 
     - name: Get Fluent Bit commit info
