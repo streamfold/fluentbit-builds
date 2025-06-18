@@ -100,7 +100,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         tag_name: ${{ steps.release_version.outputs.version }}
-        name: "Fluent Bit Build ${{ steps.release_version.outputs.version }} (fb-${{ steps.fluentbit_info.outputs.sha }})"
+        #name: "Fluent Bit Build ${{ steps.release_version.outputs.version }} (fb-${{ steps.fluentbit_info.outputs.sha }})"
         body: |
           Automated build of Fluent Bit
           
