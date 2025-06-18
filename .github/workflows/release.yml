@@ -93,7 +93,7 @@ jobs:
         cp bin/fluent-bit artifacts/
         cp -r bin/fluent-bit artifacts/ 2>/dev/null || true
         # Include version info in artifact name
-        tar -czf fluent-bit-${{ steps.next_version.outputs.version }}-${{ steps.fluentbit_info.outputs.sha }}.tar.gz -C artifacts .
+        tar -czf fluent-bit-${{ steps.next_version.outputs.version }}.tar.gz -C artifacts .
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
